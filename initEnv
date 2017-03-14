@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PWD=`pwd`
+echo ">>> 初始化编译环境"
+. build/envsetup.sh
+
+echo ">>> 当前目录:$PWD"
+outname=`basename $PWD`
+
+export OUT_DIR="/home/outdir/$outname/out"
+echo ">>> 设置OUT目录为:$OUT_DIR"
