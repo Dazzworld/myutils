@@ -1,8 +1,6 @@
-#!/bin/bash
-
 PWD=`pwd`
 echo ">>> 初始化编译环境"
-. build/envsetup.sh
+source build/envsetup.sh
 
 echo ">>> 当前目录:$PWD"
 outname=`basename $PWD`
