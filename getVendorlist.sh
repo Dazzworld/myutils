@@ -11,7 +11,10 @@ function getdir(){
         echo $file
         arr=(${arr[*]} $file)
     else
-        getdir $file
+	if test -d $file
+	then
+           getdir $file
+        fi
     fi
     done
 }
